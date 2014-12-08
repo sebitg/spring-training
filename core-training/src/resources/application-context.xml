@@ -7,5 +7,14 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	
+	<alias name="consoleLogger" alias="logger" />
+	<bean id="consoleLogger" class="pl.sebitg.training.core.loggers.SystemOutLogger" />
+	
+	<bean id="someInterfaceBean" class="pl.sebitg.training.core.sampleclasses.SomeInterfaceImpl1">
+		<property name="logger" ref="logger" />
+	</bean>
+	
+	<alias name="log4jLogger" alias="logger" />
+	<bean id="log4jLogger" class="pl.sebitg.training.core.loggers.Log4JLogger" />
     
 </beans>
