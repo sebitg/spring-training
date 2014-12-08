@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: Tahoma;
+	font-size: 14px;
+	color: #666666;
+	margin: 0px 0px 0px 0px;
+	margin-top: 15px;
+	background-color: white;
+}
