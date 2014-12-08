@@ -11,5 +11,7 @@ public class SystemOutLogger implements Logger {
 	public void log(String message) {
 		System.out.println("[LOG] " + message);
 	}
+	
+
 
 }

@@ -14,5 +14,4 @@ public class Log4JLogger implements Logger {
 	public void log(String message) {
 		LOG.info(message);
 	}
-
 }
