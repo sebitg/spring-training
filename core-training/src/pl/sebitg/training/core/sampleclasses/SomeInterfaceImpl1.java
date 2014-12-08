@@ -8,7 +8,7 @@ public class SomeInterfaceImpl1 implements SomeInterface {
 
 	@Override
 	public void foo() {
-		System.out.println("Hello world!");
+		logger.log("Some dummy message!");
 	}
 
 	public Logger getLogger() {
