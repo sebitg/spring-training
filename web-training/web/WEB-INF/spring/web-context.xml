@@ -51,6 +51,7 @@
 	<mvc:resources location="/web/resources/css/" mapping="/css/**"/>
 	<mvc:resources location="/web/resources/js/" mapping="/js/**"/>
 	<mvc:resources location="/web/resources/img/" mapping="/img/**"/>
+	<mvc:resources location="/web/resources/bower_components/" mapping="/bower_components/**"/>
 	
 	<!-- Context components scan -->
 	<context:component-scan base-package="pl.sebitg.training.web.controllers" />
