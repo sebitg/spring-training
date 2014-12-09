@@ -9,4 +9,5 @@
 	<br />
 	<a href='<c:url value="somePage/Jan/Kowalski" />' class="btn btn-lg btn-success">Fill this page!</a>
 	<a href='<c:url value="somePage2?name=Jan&lastname=Kowalski" />' class="btn btn-lg btn-success">Fill this page as well!</a>
+	<a href='<c:url value="register" />' class="btn btn-lg btn-primary">Register in system</a>
 </div>
