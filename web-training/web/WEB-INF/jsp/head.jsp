@@ -11,8 +11,8 @@
 	
 	<jsp:include page="/WEB-INF/jsp/js.jsp" />
 	
-	<link href='<c:url value="bower_components/bootstrap/dist/css/bootstrap.min.css" />' rel="stylesheet" />
-	<link href='<c:url value="css/styles.css" />' rel="stylesheet" />
+	<link href='<c:url value="/bower_components/bootstrap/dist/css/bootstrap.min.css" />' rel="stylesheet" />
+	<link href='<c:url value="/css/styles.css" />' rel="stylesheet" />
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
