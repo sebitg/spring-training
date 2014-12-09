@@ -1,8 +1,13 @@
 package pl.sebitg.training.web.forms;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class FormModel {
 	
+	@NotEmpty
 	private String name;
+	
+	@NotEmpty
 	private String lastName;
 	
 	public String getName() {
@@ -20,7 +25,5 @@ public class FormModel {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-	
 
 }

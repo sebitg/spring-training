@@ -1,5 +1,7 @@
 package pl.sebitg.training.web.controllers;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -58,12 +60,12 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String registerPost(@ModelAttribute FormModel form, BindingResult result, Model model) {
+	public String registerPost(@Valid @ModelAttribute FormModel form, BindingResult result, Model model) {
 		if(result.hasErrors()) {
 			model.addAttribute("error", "Some errors occured! Fill again!");
+			model.addAttribute("form", form);
 			return "register";
 		}
-		model.addAttribute("form", form);
 		return "redirect:/register2";
 	}
 	
@@ -76,7 +78,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/register2", method = RequestMethod.POST)
-	public String register2Post(@ModelAttribute FormModel2 form2, BindingResult result, Model model) {
+	public String register2Post(@Valid @ModelAttribute FormModel2 form2, BindingResult result, Model model) {
 		if(result.hasErrors()) {
 			model.addAttribute("error", "Some errors occured! Fill again!");
 			return "register2";
