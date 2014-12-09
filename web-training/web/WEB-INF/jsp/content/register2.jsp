@@ -37,17 +37,14 @@
 	<div class="form-group">
 		<form:label path="address">Address</form:label>
 		<form:input path="address" cssClass="form-control" />
-		<form:errors path="address" cssClass="error" />
 	</div>
 	<div class="form-group">
 		<form:label path="postal">Postal</form:label>
 		<form:input path="postal" cssClass="form-control" />
-		<form:errors path="postal" cssClass="error" />
 	</div>
 	<div class="form-group">
 		<form:label path="email">Email</form:label>
 		<form:input path="email" cssClass="form-control" />
-		<form:errors path="email" cssClass="error" />
 	</div>
 	<div class="form-group submit-button">
 		<button type="submit" class="btn btn-lg btn-success">Register</button>

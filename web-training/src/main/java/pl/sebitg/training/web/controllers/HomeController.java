@@ -63,7 +63,6 @@ public class HomeController {
 	public String registerPost(@Valid @ModelAttribute FormModel form, BindingResult result, Model model) {
 		if(result.hasErrors()) {
 			model.addAttribute("error", "Some errors occured! Fill again!");
-			model.addAttribute("form", form);
 			return "register";
 		}
 		return "redirect:/register2";
