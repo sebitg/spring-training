@@ -14,7 +14,7 @@ public class FormModel2 {
 	private String postal;
 	
 	@NotEmpty
-	@Pattern(regexp="[A-Za-z0-9-\\.]+@[A-Za-z0-9-\\.]")
+	@Pattern(regexp="[A-Za-z0-9-.]+@[A-Za-z0-9-.]+")
 	private String email;
 	
 	public String getAddress() {

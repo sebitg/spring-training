@@ -16,7 +16,7 @@ import pl.sebitg.training.web.forms.FormModel;
 import pl.sebitg.training.web.forms.FormModel2;
 
 @Controller
-@SessionAttributes({"form"})
+@SessionAttributes({"form", "form2"})
 public class HomeController {
 
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
@@ -63,9 +63,9 @@ public class HomeController {
 	public String registerPost(@Valid @ModelAttribute FormModel form, BindingResult result, Model model) {
 		if(result.hasErrors()) {
 			model.addAttribute("error", "Some errors occured! Fill again!");
-			model.addAttribute("form", form);
 			return "register";
 		}
+		model.addAttribute("form", form);
 		return "redirect:/register2";
 	}
 	

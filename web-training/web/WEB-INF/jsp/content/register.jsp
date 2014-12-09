@@ -39,6 +39,6 @@
 		<form:errors path="lastName" cssClass="error" />
 	</div>
 	<div class="form-group submit-button">
-		<button type="submit" class="btn btn-lg btn-success">Register</button>
+		<button type="submit" class="btn btn-lg btn-success">Next</button>
 	</div>
 </form:form>
